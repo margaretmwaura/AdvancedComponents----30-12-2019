@@ -2,12 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router';
 
+import Notifications from 'vue-notification'
 Vue.config.productionTip = false;
 // Load the Vue router
 Vue.use(VueRouter);
-
-// Import components
-// import Home from './components/Home.vue';
+Vue.use(Notifications)
 import About from './components/About.vue';
 import filenotfound from './components/filenotfound.vue';
 import Student from './components/Student.vue';
@@ -56,8 +55,6 @@ const router = new VueRouter({
             component: filenotfound,
         }
     ],
-
-
 });
 new Vue({
     router,

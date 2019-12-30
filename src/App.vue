@@ -6,6 +6,7 @@
           <router-link to="/Student/:name">Go to Student data </router-link>
       </p>
       <router-view></router-view>
+      <notifications group="foo" />
   </div>
 </template>
 

@@ -4,11 +4,8 @@
             <component v-bind:is="component" >
             </component>
         </keep-alive>
-
-
         <button v-on:click="toggle">Toggle</button>
     </div>
-
 </template>
 
 <script>
@@ -21,7 +18,7 @@
         },
         data (){
             return {
-                component:"testtwo",
+                component:"testone",
             }
         },
         methods: {
@@ -36,5 +33,4 @@
     }
 </script>
 <style scoped>
-
 </style>

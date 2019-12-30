@@ -9,6 +9,7 @@
             {{ item.name}}
         </li>
         <p>{{selectedPlace}}</p>
+        <p v-show="career">Welceom to choosing a career path for you </p>
     </div>
 </template>
 
@@ -18,6 +19,7 @@
         data (){
             return {
                 selectedPlace : "none at the moment",
+                career : false,
                 myname: " ",
                 navdata : [
                     {name: 'Taking the Exam in January'},
@@ -33,6 +35,21 @@
                 this.selectedPlace = selectedItem.name;
                 // this.showPlaces = true;
             }
+        },
+        updated()
+        {
+              this.$notify({
+                  group: 'foo',
+                  title: 'Profile Update',
+                  text: 'Your data has been updated'
+              });
+        },
+        created()
+        {
+            this.career = true;
+        },
+        beforeDestroy() {
+            this.career = false;
         }
     }
 </script>
