@@ -1,8 +1,11 @@
 <template>
-    <div>
-        <p>This is the second component</p>
-        <p>Gal aint happy about nothing</p>
-    </div>
+
+        <p>We believe that you cannot have great learning or build a
+            great community without a strong and positive culture.
+            At Nova Pioneer all students, teachers, and staff live and
+            learn by the following six culture principles.
+        </p>
+
 
 </template>
 

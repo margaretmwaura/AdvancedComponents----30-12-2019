@@ -60,7 +60,7 @@ new Vue({
     router,
     data (){
         return {
-            display :"This is maggie she doing grerat",
+            display :"This is for the schools records",
             navdata : [
                 {name: 'This is Maggie'},
                 {name: 'This is Judy'},

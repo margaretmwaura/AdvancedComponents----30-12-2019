@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="error">
         <h1>404 error</h1>
         <p>File not found</p>
     </div>
@@ -11,6 +11,14 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+    #error{
+        p,h1
+        {
+            text-align: center;
+        }
+    }
+    /*p,h1{*/
+    /*    text-align: center;*/
+    /*}scss*/
 </style>
